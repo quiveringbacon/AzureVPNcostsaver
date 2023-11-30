@@ -3,11 +3,11 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workflows_backuplogicapp_name": {
-            "defaultValue": "logicapptest",
+            "defaultValue": "backup-logicapp",
             "type": "String"
         },
         "workflows_restorelogicapp_name": {
-            "defaultValue": "logicapptest2",
+            "defaultValue": "restore-logicapp",
             "type": "String"
         },
         "backup_start_time": {
@@ -23,12 +23,12 @@
             "type": "String"
         },
         "VPN_connection_object_resource_id": {
-            //"defaultValue": "/subscriptions/7c56131a-8068-4e37-a566-42da8d682e27/resourceGroups/testing-rg/providers/Microsoft.Network/connections/tocsr",
+            
             "defaultValue": "Insert the resourceid of the vpn connection object",
             "type": "String"
         },
         "VPNGateway_resource_id": {
-            //"defaultValue": "/subscriptions/7c56131a-8068-4e37-a566-42da8d682e27/resourceGroups/testing-rg/providers/Microsoft.Network/virtualNetworkGateways/testing-vpngw",
+            
             "defaultValue": "Insert the resourceid of the vpn gateway object",
             "type": "String"
         }
