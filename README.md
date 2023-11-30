@@ -6,5 +6,7 @@ These ARM templates create a storage account and 2 logic apps. The first logic r
 Deploy for active/passive with 1 connection:
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fquiveringbacon%2FAzureVPNcostsaver%2Fmain%2Ftemplate%2520-%25201%2520connection.json)
 
+
+
 Deploy for active/active with 2 connections:
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fquiveringbacon%2FAzureVPNcostsaver%2Fmain%2Ftemplate-multiconnection.json)
