@@ -518,8 +518,7 @@
                                 ]
                             },
                             "type": "Http",
-                            "inputs": {
-                                //"uri": "https://management.azure.com/subscriptions/7c56131a-8068-4e37-a566-42da8d682e27/resourcegroups/vpntest1-rg/providers/Microsoft.Network/connections/con1/sharedkey?api-version=2023-09-01",
+                            "inputs": {                                
                                 "uri" : "[concat('https://management.azure.com', parameters('VPN_connection_object_resource_id'), '/sharedkey?api-version=2023-09-01')]",
                                 "method": "GET",
                                 "authentication": {
@@ -820,8 +819,7 @@
                                 ]
                             },
                             "type": "Http",
-                            "inputs": {
-                                //"uri": "https://management.azure.com/subscriptions/7c56131a-8068-4e37-a566-42da8d682e27/resourcegroups/vpntest1-rg/providers/Microsoft.Network/connections/con2/sharedkey?api-version=2023-09-01",
+                            "inputs": {                                
                                 "uri": "[concat('https://management.azure.com', parameters('VPN_connection2_object_resource_id'), '/sharedkey?api-version=2023-09-01')]",
                                 "method": "GET",
                                 "authentication": {
