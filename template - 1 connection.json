@@ -162,8 +162,7 @@
                                         "name": "@parameters('$connections')['azureblob']['connectionId']"
                                     }
                                 },
-                                "method": "post",
-                                //"body": "{\"$schema\":\"https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#\",\"contentVersion\":\"1.0.0.0\",\"parameters\":{},\"variables\":{},\"resources\":[@{variables('fwbody2')},{\"type\":\"Microsoft.Network/connections\",\"apiVersion\":\"2023-09-01\",\"name\":\"tocsr\",\"location\":\"southcentralus\",\"dependsOn\":[\"[resourceId('Microsoft.Network/virtualNetworkGateways', 'testing-vpngw')]\"],\"properties\":@{variables('var2')}}]}",
+                                "method": "post",                                
                                 "body": "@{variables('slice2')},\"sharedkey\":\"@{variables('psk1')}\"}}]}",
                                 "headers": {
                                     "ReadFileMetadataFromServer": true
@@ -184,8 +183,7 @@
                         "HTTP": {
                             "runAfter": {},
                             "type": "Http",
-                            "inputs": {
-                                //"uri": "https://management.azure.com/subscriptions/7c56131a-8068-4e37-a566-42da8d682e27/resourcegroups/vpntest1-rg/exportTemplate?api-version=2021-04-01",
+                            "inputs": {                                
                                 "uri": "[concat('https://management.azure.com/subscriptions/',subscription().subscriptionId,'/resourcegroups/',resourceGroup().name,'/exportTemplate?api-version=2021-04-01')]",
                                 "method": "POST",
                                 "body": {
@@ -283,8 +281,7 @@
                                 ]
                             },
                             "type": "Http",
-                            "inputs": {
-                                //"uri": "https://management.azure.com//subscriptions/7c56131a-8068-4e37-a566-42da8d682e27/resourceGroups/testing-rg/providers/Microsoft.Network/connections/tocsr/sharedkey?api-version=2023-09-01",
+                            "inputs": {                                
                                 "uri": "[concat('https://management.azure.com', parameters('VPN_connection_object_resource_id'), '/sharedkey?api-version=2023-09-01')]",
                                 "method": "GET",
                                 "authentication": {
@@ -889,4 +886,5 @@
             }
         }
     ]
+
 }
